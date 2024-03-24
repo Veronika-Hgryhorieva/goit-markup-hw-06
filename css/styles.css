@@ -88,16 +88,31 @@ body {
         align-items: center;
 }
 
-.header-menu-list {
+.header-menu-list{
         display: flex;
         gap: 40px;
 }
 
-.nav-link {
+.nav-link{
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
         font-weight: 500;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current{
+        position: relative;
+        color: #404BBF;
+}
+
+.current::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
 }
 
 .nav-link:hover,
@@ -125,6 +140,7 @@ body {
 .contact-link {
         padding-top: 24px;
         padding-bottom: 24px;
+        transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -141,6 +157,19 @@ body {
         background: #2e2f42;
         padding-top: 188px;
         padding-bottom: 188px;
+        box-sizing: content-box;
+        background-image: url(../images/people-office\ 1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(
+                to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 1.jpg);
+        max-width: 1440px;
+        margin: auto;
 }
 
 .header-section {
@@ -219,7 +248,14 @@ body {
 .list-section-item {
         width: calc((100% - 72px) / 4);
 }
-
+.box-section{
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        /* background-image: url(../css/icon.svg/SVG/antenna.svg); */
+        background-repeat: no-repeat;
+        background-position: center;    
+}
 .custom-section {
         background-color: #f4f4fd;
         padding-top: 120px;
@@ -248,6 +284,8 @@ body {
         width: calc((100% - 72px) / 4);
         background-color: #ffffff;
         border-radius: 0px 0px 4px 4px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
 }
 
 .custom-sub-paragh {
@@ -341,6 +379,8 @@ body {
         border-right: 1px solid #e7e9fc;
         padding: 32px 16px;
         margin-bottom: 8px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
 }
 
 .footer {

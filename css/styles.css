@@ -70,6 +70,7 @@ body {
 
 .header-information-container {
         border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -100,7 +101,7 @@ body {
         color: #404BBF;
 }
 
-.current ::after{
+.current::after{
     content: "";
     background-color:#404BBF ;
     position: absolute;
@@ -137,6 +138,7 @@ body {
         padding-top: 24px;
         padding-bottom: 24px;
         transition: color cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -154,16 +156,11 @@ body {
         padding-top: 188px;
         padding-bottom: 188px;
         box-sizing: content-box;
-        background-image: url(../images/people-office\ 1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-image: linear-gradient(
-                to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office\ 1.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+         url(../images/people-office.jpg); 
         max-width: 1440px;
         margin: auto;
 }
@@ -194,6 +191,7 @@ body {
         cursor: pointer;
         padding: 16px 32px;
         min-width: 169px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-button:focus,
@@ -245,16 +243,14 @@ body {
         width: calc((100% - 72px) / 4);
 }
 .box-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 264px;
         height: 112px;
         background-color: #F4F4FD;
         background-repeat: no-repeat;
         background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
         border-radius: 4px;
         margin-bottom: 8px;
         border: 1px solid #8e8f99;    

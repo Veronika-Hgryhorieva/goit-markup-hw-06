@@ -397,6 +397,7 @@
           solutions.
         </p>
       </div>
+
       <div class="media-box">
         <p class="social-link-footer">Social media</p>
         <ul class="social-icons-footer">
@@ -407,6 +408,7 @@
             </svg>
           </a>
         </li>
+
         <li class="icons-container">
           <a href="" class="icons-footer">
             <svg class="icon" width="24" height="24">
@@ -414,6 +416,7 @@
             </svg>
           </a>
         </li>
+
         <li class="icons-container">
           <a href="" class="icons-footer">
             <svg class="icon" width="24" height="24">
@@ -421,6 +424,7 @@
             </svg>
           </a>
         </li>
+
         <li class="icons-container">
           <a href="" class="icons-footer">
             <svg class="icon" width="24" height="24">
@@ -430,60 +434,65 @@
         </li>
       </ul>
       </div>
+
       <div>
         <p>Subscribe</p>
-        <form>
+        <form class="">
           <label for="e-mail-button">
             E-mail
-          <input type="text" name="username" id="username"/>
+          <input type="text" name="username" id="e-mail-button"/>
         </label>
-          <button type="submit">Subscribe</button>
+          <button type="submit" class="button-subscribe">Subscribe
+          <svg class="submit-frame" width="24" height="24">
+            <use href="./images/icons.svg#icon-frame"></use>
+          </svg>
+        </button>
         </form>
       </div>
     </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="button-property" width="24" height="24">
-            <use href="./images/icons.svg#icon-property"></use>
+            <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
-
         <p class="modal-paragraph">Leave your contacts and we will call you back</p>
-
-      <form class="modal-form">
+      
+        <form class="modal-form">
         <div>
-        <label for="user-name" class="modal-label"><span>Name</span>
-          <span class="input-wrapper">
-        <input type="text" name="user-name" class="modal-input"/>
+        <label for="user-name" class="modal-label" id="name">
+          <span>Name</span></label>
+          <div class="input-wrapper">
+        <input type="text" name="name" class="modal-input"/>
         <svg class="modal-icons" width="18" height="24">
         <use href="./images/icons.svg#icon-person-black"></use>
       </svg>
-    </span>
-      </label>
+         </div>
     </div>
+   
 
     <div>
         <label for="user-phone" class="modal-label"><span>Phone</span>
-          <span class="input-wrapper">
+          <div class="input-wrapper">
         <input type="tel" name="user-phone"class="modal-inputs"/>
         <svg class="modal-icons" width="18" height="24">
           <use href="./images/icons.svg#icon-phone-black"></use>
         </svg>
-      </span>
+          </div>
       </label>
     </div>
 
     <div>
         <label for="user-email" class="modal-label"><span>Email</span>
-          <span class="input-wrapper">
+          <div class="input-wrapper">
         <input type="email" name="user-email" class="modal-inputs"/>
         <svg class="modal-icons" width="18" height="24">
           <use href="./images/icons.svg#icon-email-black"></use>
         </svg>
-      </span>
+          </div>
       </label>
     </div>
 
@@ -494,12 +503,15 @@
          class="modal-text"></textarea>
       </div>
 
-      <div class="modal-field">
+      <div>
         <input type="checkbox" name="checkbox" class="checkbox-input" id="privat"/>
-        <label>I accept the terms and conditions of the Privacy Policy</label>
+        <label name="privat" >
+          <span class="checkbox-text"></span>
+          I accept the terms and conditions of the &nbsp;<a class="check-link">Privacy Policy</a>
+        </label>
       </div>
         <button type="submit" class="button-send">Send</button>
-      </form>
+  </form> 
       </div>
     </div>
   </body>

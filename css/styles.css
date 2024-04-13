@@ -665,6 +665,7 @@ input {
 .wrapper:hover{ 
         fill: #ffffff;
 }
+
 .wrapper:focus{
         fill: #ffffff;
 }
@@ -686,7 +687,6 @@ input {
         border-radius: 4px;
         background-color: transparent;
         outline: transparent;
-        margin-bottom: 8px;
         padding-left: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border: 1px solid rgba(46, 47, 66, 0.4); 
@@ -705,7 +705,6 @@ input {
         border-radius: 4px;
         background-color: transparent;
         outline: transparent;
-        margin-bottom: 8px;
         padding-left: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -748,8 +747,7 @@ input {
         top: 11px;
         top: 50%;
         transform: translateY(-50%);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        fill: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .modal-icons+svg{

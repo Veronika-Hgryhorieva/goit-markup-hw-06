@@ -622,7 +622,7 @@ input {
         padding-top: 72px; 
         padding-left: 24px;
         padding-right: 24px;
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 
                      0px 1px 3px rgba(0, 0, 0, 0.12), 
                       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -656,11 +656,19 @@ input {
         border: none;
 }
 
-.button-property{
+.wrapper{
         width: 8px;
         height: 8px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
+
+.wrapper:hover{ 
+        fill: #ffffff;
+}
+.wrapper:focus{
+        fill: #ffffff;
+}
+
 .modal-paragraph{
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -683,6 +691,13 @@ input {
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border: 1px solid rgba(46, 47, 66, 0.4); 
         padding-left: 38px;
+}
+.modal-input+span{
+        background-color: var(--background-color-checked, #404bbf);
+        border: none; 
+}
+.modal-input+span svg{
+        fill: var(--icon-color-checked, #F4F4FD);
 }
 .modal-inputs{
         width: 100%;
@@ -737,7 +752,11 @@ input {
         fill: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
+.modal-icons+svg{
+        color: currentColor; 
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 .input-wrapper{
          position: relative; 
 }
@@ -766,34 +785,42 @@ input {
 .box-comment{
         margin-bottom: 16px;
 }
+
 .checkbox-input{
         width: 16px;
         height: 16px;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
+
 }
-.checkbox-input:checked + span{
-        background-color: var(--background-color-checked);
+
+.checkbox-input:checked+span{
+        color: var(--text-color, #8e8f99);
         border: none;
 }
+
 .checkbox-input:checked+span svg{
         fill: var(--icon-color-checked);
 }
+
 .checkbox-input:root {
         --background-color-checked: #404bbf;
         --icon-color-checked: #F4F4FD; 
       }
+
 .checkbox-user{
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04;
         color: var(--custom-color);
 }
+
 .checkbox-user:root {
         --custom-color: #8e8f99;
       }
+
 .check-link{
         color: #4d5ae5;
         text-decoration: underline;
@@ -814,6 +841,7 @@ input {
         align-items: center;
         justify-content: center;
         fill: transparent;
+        
                 
 }
 .button-send{

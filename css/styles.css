@@ -737,7 +737,8 @@ input {
         margin-bottom: 4px;  
 }
 
-.modal-icons {
+.modal-icons{
+        fill: #2e2f42;
         position: absolute;
         left: 16px;
         top: 50%;

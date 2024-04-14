@@ -737,16 +737,14 @@ input {
         margin-bottom: 4px;  
 }
 
-.modal-icons{
-        position: absolute; 
+.modal-icons {
+        position: absolute;
         left: 16px;
-        top: 11px;
         top: 50%;
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        /* color: currentColor;   */
-
-} 
+        /* color: currentColor; */
+ }
 
 .input-wrapper{
          position: relative; 

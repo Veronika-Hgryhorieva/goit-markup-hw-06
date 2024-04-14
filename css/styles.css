@@ -737,7 +737,7 @@ input {
         margin-bottom: 4px;  
 }
 
-.modal-icons{
+/* .modal-icons{
         position: absolute; 
         left: 16px;
         top: 11px;
@@ -745,7 +745,7 @@ input {
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
-}
+} */
 
 .modal-icons{
         color: currentColor; 
@@ -790,13 +790,20 @@ input {
         color: #8e8f99;
 
 }
-
-.checkbox,.checkbox-input:checked+.checkbox-text{
+.visually-hidden:checked + .checkbox-input .checkbox-text {
+        --background-color-checked: #404bbf;
+        --icon-color-checked: #F4F4FD;
+        color: var(--text-color, #8e8f99);
+        border: none;
+        fill: var(--icon-color-checked);
+    }
+    
+/* .checkbox-input:checked+.checkbox-text{
         --background-color-checked: #404bbf;
         color: var(--text-color, #8e8f99);
         border: none;
         fill: var(--icon-color-checked);
-}
+} */
 
 .checkbox-input:checked+.checkbox-text{
         fill: var(--icon-color-checked);

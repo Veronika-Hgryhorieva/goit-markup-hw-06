@@ -784,20 +784,23 @@ input {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-
 }
-
+.modal-input:checked+ .checkbox-input >.checkbox-text{
+        background-color: #404BBF;
+        border: none;
+        fill: #F4F4FD;
+}
 /* .checkbox-input:checked+.checkbox-text{
         background-color: var(--background-color-checked);
         color: var(--text-color, #8e8f99);
         border: none;
         fill: var(--icon-color-checked);
 } */
-.modal-check:checked + .check-text > .span-checkbox {
+/* .modal-check:checked + .check-text > .span-checkbox {
         background-color: #404BBF;
         border: none;
         fill: #F4F4FD;
-      }
+      }  */
 /* .checkbox-input:checked+.checkbox-text{
         fill: var(--icon-color-checked);
 } */

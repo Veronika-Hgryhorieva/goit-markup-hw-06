@@ -242,6 +242,7 @@ body {
 .list-section-item {
         width: calc((100% - 72px) / 4);
 }
+
 .box-section{
         display: flex;
         align-items: center;
@@ -305,14 +306,12 @@ body {
 .custom-paragraph {
         text-align: center;
 }
+
 .icons-list{
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
-}
-.icons-container{
-
 }
 
 .icons-link{
@@ -325,13 +324,16 @@ body {
         background-color: #4D5AE5;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icons-link:focus,
 .icons-link:hover{
         background-color: #404BBF;
 }
+
 .icons-svg{
     fill: #F4F4FD;
 }
+
 .section-custom-portfolio {
         font-weight: 700;
         font-size: 36px;
@@ -369,10 +371,12 @@ body {
         width: calc((100% - 48px) / 3);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .section-portfolio-item:hover{
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
       /*  transform: translateY(0%);*/
 }
+
 .image-wrapper{
    position:relative;
    overflow: hidden;
@@ -398,6 +402,7 @@ body {
 .image-wrapper:hover .text-wrapper{
         transform: translateY(0%);
 }
+
 .custom-heading {
         font-weight: 700;
         font-size: 36px;
@@ -451,13 +456,16 @@ body {
         margin-right: 120px;
 
 }
+
 .section-footer{
         margin-right: 120px;
 }
+
 .mediateka{
         display: flex;
         align-items: baseline;      
 }
+
 .logo-color {
         color: #f4f4fd;
         display: inline-block; 
@@ -550,9 +558,11 @@ body {
        border-radius: 4px;
        color: #ffffff;
 }
+
 .email-link-footer::placeholder{
         color: #ffffff;
 }
+
 button {
 	font-family: inherit;
 	color: currentColor;
@@ -561,6 +571,7 @@ button {
 input {
 	font-family: inherit;
 }
+
 .button-subscribe{
         font-family: "Roboto",sans-serif;
         min-width: 165px;
@@ -576,6 +587,11 @@ input {
         color: #ffffff;
         border: none;
         border-radius: 4px;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus{
+        background-color: #404bbf;
 }
 .submit-frame{
         margin-left: 16px;
@@ -657,7 +673,6 @@ input {
        
 }
 
-
 .modal-paragraph{
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -672,6 +687,7 @@ input {
 .modal-input{
         width: 100%;
         height: 40px;
+        font-size: 12px;
         border-radius: 4px;
         background-color: transparent;
         outline: transparent;
@@ -680,6 +696,11 @@ input {
         border: 1px solid rgba(46, 47, 66, 0.4); 
         padding-left: 38px;
 }
+
+.modal-input:focus+ .checkbox-input >.checkbox-text {
+        border-color: #4D5AE5; 
+    }
+
 .modal-input:checked{
         background-color: var(--background-color-checked, #404bbf);
         border: none; 
@@ -688,6 +709,7 @@ input {
 .modal-input+span{
         fill: var(--icon-color-checked, #F4F4FD);
 }
+
 .modal-inputs{
         width: 100%;
         height: 58px;
@@ -702,13 +724,15 @@ input {
         border-color: #4D5AE5;
         fill: #ffffff;
 }
+
 .modal-input:hover{
         fill: #ffffff;
 }
+
 .modal-input:focus + .modal-icons{
         fill: #4D5AE5;
 }
-/* .modal-form{ */
+
 .box-modal-form{
         margin-bottom: 8px;
 }     
@@ -722,11 +746,6 @@ input {
         display: block;
         margin-bottom: 4px; 
 }
-
-/* .modal-label{
-        display: block;
-        margin-bottom: 4px;  
-} */
 
 .modal-icons{
         color: #2e2f42;
@@ -756,12 +775,15 @@ input {
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         resize: none;
 }
+
 .modal-text:focus{
         border-color: #4D5AE5; 
 }
+
 .container-checkbox{
         margin-bottom: 24px;
 }
+
 .box-comment{
         margin-bottom: 16px;
 }
@@ -775,17 +797,17 @@ input {
         color: #8e8f99;
         margin-right: 8px; 
 }
+
 .modal-input:checked+ .checkbox-input >.checkbox-text{
         background-color: #404BBF;
         border: none;
         fill: #F4F4FD;
 }
 
-
 .checkbox-input:root {
         --background-color-checked: #404bbf;
         --icon-color-checked: #F4F4FD; 
-      }
+ }
 
 .checkbox-user{
         font-size: 12px;
@@ -818,10 +840,10 @@ input {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        fill: transparent;     
+        fill: transparent;  
+        margin-right: 8px;   
 }
  
-
 .button-send{
         min-width: 169px;
         height: 56px;
@@ -837,4 +859,9 @@ input {
         border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         border-radius: 4px; 
+}
+
+.button-send:hover,
+.button-send:focus{
+        background-color: #404bbf;     
 }

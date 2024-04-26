@@ -50,12 +50,30 @@ body {
 }
 
 .container {
-        max-width: 1158px;
+        max-width: 320px;
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 16px;    
 }
 
+@media screen and (min-width: 768px) {
+   .container{
+        max-width: 768px;
+   }     
+}
+
+@media screen  and (min-width: 1158px){
+        .container{
+                max-width: 1158px;
+                padding: 0 15px;
+        }
+        .open-menu-mob{
+                padding: 0;
+                line-height: 0;
+                background-color: transparent;
+                cursor: pointer;
+                border: 0;
+        } 
+}
 .logo {
         font-family: "Raleway", sans-serif;
         color: #4d5ae5;
@@ -65,7 +83,8 @@ body {
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        display: block;
+         display: block; 
+        padding: 17px 0;
 }
 
 .header-information-container {
@@ -85,11 +104,11 @@ body {
 }
 
 .header-menu-list{
-        display: flex;
-        gap: 40px;
+         display: none; 
+        /* gap: 40px; */
 }
 
-.nav-link{
+/* перенесено на версію таблет .nav-link{
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -115,36 +134,104 @@ body {
 .nav-link:hover,
 .nav-link:focus {
         color: #404bbf;
-}
+} */
 
+ 
+
+@media screen  and (min-width:768px) {
+       .header-menu-list{
+        display: flex;
+        gap: 40px;
+       } 
+       .title-address{
+        display: block;
+       }
+       .logo{
+        margin-right: 120px;
+       }
+
+       .nav-link{
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-weight: 500;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .current{
+        position: relative;
+        color: #404BBF;
+        }
+
+        .current::after{
+        content: "";
+        background-color:#404BBF ;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+        color: #404bbf;
+        }
+        .title-address {
+                /* display: block; */
+                font-style: normal;
+                margin-left: auto;
+                display: none;
+        }
+        
+        .header-menu-nav {
+                /* display: flex; */
+                align-items: center;
+                gap: 40px;
+        }
+        
+        .contact-link {
+                padding-top: 24px;
+                padding-bottom: 24px;
+                transition: color cubic-bezier(0.4, 0, 0.2, 1);
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .contact-link:hover,
+        .contact-link:focus {
+                color: #404bbf;
+        }
+        
+}
 .header-logo {
         align-items: center;
-        margin-right: 76px;
+        /* margin-right: 76px; */
 }
-
-.header-menu-nav {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-}
-
-.title-address {
-        display: block;
+/* ПЕРЕНЕСЕНО НА ТАБЛЕТ
+ /* .title-address {
+        /* display: block; 
         font-style: normal;
         margin-left: auto;
+        display: none;
 }
+/* 
+.header-menu-nav {
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 40px; */
+/* }  */
 
-.contact-link {
+/* .contact-link {
         padding-top: 24px;
         padding-bottom: 24px;
         transition: color cubic-bezier(0.4, 0, 0.2, 1);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.contact-link:hover,
+/* .contact-link:hover,
 .contact-link:focus {
         color: #404bbf;
-}
+}  */ 
 
 .logo-title {
         color: #2e2f42;
@@ -611,11 +698,11 @@ input {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.is-open {
+/* .is-open {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-      } 
+      }  */
 
 /* MODAL */
 

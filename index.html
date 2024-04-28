@@ -43,7 +43,7 @@
             </li>
           </ul>
         </address>
-        <button  type="button" class="open-menu-mob">
+        <button  type="button" class="open-menu-mob" data-menu-open>
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-open-menu-mob" >
             </use>
@@ -465,7 +465,7 @@
 
     <!-- MODAL -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop ">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="wrapper" width="8" height="8">
@@ -530,7 +530,9 @@
               <use href="./images/icons.svg#icon-vector-new"></use>
             </svg>
           </span>
+          <span>
           I accept the terms and conditions of the &nbsp;<a class="check-link">Privacy Policy</a>
+        </span>
         </label>
       </div>
       
@@ -538,5 +540,94 @@
   </form> 
       </div>
     </div>
+
+<!-- MOBILE MENU -->
+
+    <div class="mobile-menu" data-menu>
+      <button type="button" class="modal-close" data-menu-close>
+        <svg class="wrapper" width="8" height="8">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a  href="" class="mobile-menu-link colors" >Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a  href="" class="mobile-menu-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a  href="" class="mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mob-menu-cotacts">
+        <li>
+           <a  class="mob-menu-contact-link color" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a  class="mob-menu-contact-link " href="mailto:info@devstudio.com">info@devstudio.com</a>
+       </li>
+      </ul>
+
+      <ul class="mob-menu-social-links">
+        <li class="mob-menu-icons-container">
+          <a href="" class="mob-menu-icons">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-menu-icons-container">
+          <a href="" class="mob-menu-icons">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-menu-icons-container">
+          <a href="" class="mob-menu-icons">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mob-menu-icons-container">
+          <a href="" class="mob-menu-icons">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      (() => {
+  const refs = {
+    openMenuBtn: document.querySelectorAll('[data-menu-open]'),
+    closeMenuBtn: document.querySelectorAll('[data-menu-close]'),
+    menu: document.querySelector('[data-menu]'),
+  };
+
+
+  refs.openMenuBtn.forEach(element => {
+    element.addEventListener('click', toggleMenu);
+  });
+  refs.closeMenuBtn.forEach(element => {
+    element.addEventListener('click', toggleMenu);
+  });
+
+
+  function toggleMenu() {
+    refs.menu.classList.toggle('is-open');
+    document.body.classList.toggle('no-scroll');
+  }
+})();
+
+
+    </script>
   </body>
 </html>

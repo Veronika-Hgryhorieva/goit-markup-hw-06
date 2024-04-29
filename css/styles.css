@@ -1002,11 +1002,10 @@ input {
 @media screen and (min-width: 768px) {
         .container{
              max-width: 768px;
-             width: 736px;
              padding-left: 16px;
              padding-right: 16px;
-     
         } 
+
         .box-section {
              display: none;   
         }   
@@ -1178,9 +1177,7 @@ input {
         .section-container-text {
                 display: flex;
                 gap: 24px; 
-                 flex-direction: row; 
-                 flex-wrap: wrap;
-                flex-direction: column;
+                flex-direction: row;
         
         }
         .section-title-first {
@@ -1216,6 +1213,7 @@ input {
         }
         
         .header-menu-nav {
+                display: flex;
                 display: block;  
                 flex-direction: row;
                 align-items: center;
@@ -1252,12 +1250,11 @@ input {
         }
         .list-section-item {
                 width: calc((100% - 72px) / 4); 
-                width: 100%;
         }
         .custom-list {
                 display: flex;
                 flex-wrap: nowrap;
-                gap: 72px;
+                gap: 24px;
                 border-radius: 0px 0px 4px 4px;
                 align-items: center;
         }

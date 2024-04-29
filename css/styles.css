@@ -141,6 +141,8 @@ body {
         width: 24px;
         height: 24px;
         border: 0;
+        background: none;
+        padding: 0;
  }
 /* .contact-link {
         padding-top: 24px;
@@ -252,8 +254,8 @@ body {
 }
 
 .custom-head-submit {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 
 .visually-hidden {
@@ -282,7 +284,7 @@ body {
         line-height: 1.1;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        text-align: left;
+        text-align: center;
 }
 .section-title-first-text{
         font-weight: 500;
@@ -297,8 +299,8 @@ body {
 }
 .custom-section {
         background-color: #f4f4fd;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 
 .section-custom-header{
@@ -386,8 +388,8 @@ body {
 }
 
 .container-section-portfolio {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
 }
 
 .section-portfolio {
@@ -502,8 +504,7 @@ body {
 .footer-logo {
         display: inline-block;
         margin-bottom: 16px;
-        margin-right: 120px;
-
+        padding: 0;
 }
 
 .section-footer{
@@ -838,13 +839,12 @@ input {
 }
 
 .checkbox-input{
-        width: 16px;
-        height: 16px;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        margin-right: 8px; 
+        display: flex;
+        align-items: center; 
 }
 
 .modal-input:checked+ .checkbox-input >.checkbox-text{
@@ -943,8 +943,8 @@ input {
         flex-direction: column;
         width: 151px; 
         font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11111;
+        font-size: 20px;
+        line-height: 1.1;
         letter-spacing: 0.02em;
         color: #2e2f42;
         gap: 40px;
@@ -962,6 +962,7 @@ input {
         gap: 24px;
          width: 193px;
          padding-left: 16px;
+        font-size: 20;;
         
 }
 .color{
@@ -970,12 +971,9 @@ input {
 .mob-menu-social-links{
         display: flex;
         align-items: center;
-        justify-content: center;
         flex-direction: row;
-        height: 40px;
         gap: 40px;
-        /* margin-top: 48px; */
-        padding: 48px 16px 40px;
+        margin-top: 40px;
 }
 
 .mob-menu-icons-container{
@@ -1244,6 +1242,10 @@ input {
                 gap: 24px;
                 border-radius: 0px 0px 4px 4px;
                 align-items: center;
+        }
+        .custom-head-submit{
+                padding-top: 120px;
+                padding-bottom: 120px;
         }
         .custom-section{
                 padding-top: 120px;

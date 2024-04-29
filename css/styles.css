@@ -904,7 +904,7 @@ input {
         background-color: #4D5AE5;
         color: #FFFFFF;
         display: block;
-        margin-right: auto;
+         margin-right: auto; 
         margin-left:auto;
         border: none;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1179,7 +1179,9 @@ input {
                 letter-spacing: 0.02em;
                 color: #2e2f42;
         }
-      
+        .section-title-first-text{
+                font-weight: 400;
+        }
         .box-section {
                 display: flex;
                 align-items: center;
